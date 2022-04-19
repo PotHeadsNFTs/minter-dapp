@@ -1,9 +1,9 @@
 const contractAddress = "0x1f449735bC3564f10497f36Be86E9F55E14751f1"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome Pot Head!";
+const welcome_h1 = "High, Pot Head!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'The Pot Head NFT Project is the first of a new kind of NFTs, accessible to all!'
+const welcome_p = 'Check back monthly for new Pot Head mints with new additions!'
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
