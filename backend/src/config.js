@@ -46,16 +46,16 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 10; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby or polygon
+const CHAIN = 'Polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'Pot Heads Test';
-const CONTRACT_SYMBOL = 'PHtest';
+const CONTRACT_NAME = 'Pot Heads';
+const CONTRACT_SYMBOL = 'POTS';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb';
 const TREASURY_ADDRESS = '0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb';
 const MAX_SUPPLY = 123456; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.0001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 2; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 710; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
@@ -67,7 +67,7 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb"]; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb","0x678CD33aa7988e9aD3dd541697366F629e8477Bc","0x07F159d1A1c886944d0aA751f5374325ff321148"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually include it
@@ -93,7 +93,7 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "PHtest",
+  symbol: "POTS",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://potheads.site",
   creators: [
