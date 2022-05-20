@@ -7,7 +7,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Pot Heads NFT";
+const namePrefix = "PotHead NFT x 13th";
 const description = "Too high to remember to replace this description";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
@@ -22,7 +22,6 @@ const layerConfigurations = [
       { name: "Faces" },
       { name: "Accessories" },
       { name: "Fills" },
-      { name: "Hats" },
     ],
   },
 ];
@@ -49,20 +48,20 @@ const LIMIT = 10; // Your API key rate limit
 const CHAIN = 'Polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'Pot Heads';
+const CONTRACT_NAME = 'PotHeads x 13th';
 const CONTRACT_SYMBOL = 'POTS';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb';
 const TREASURY_ADDRESS = '0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb';
-const MAX_SUPPLY = 123456; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 2; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MINT_PRICE = 5; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 710; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-04-20T20:20:00+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-05-14T07:10:00+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-04-19T21:10:00+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-04-20T20:20:00+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x6cbD092eE8614eADc1a122DdabF3E0242fbb65Eb"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
